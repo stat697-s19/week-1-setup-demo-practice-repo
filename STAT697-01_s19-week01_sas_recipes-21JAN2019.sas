@@ -15,7 +15,7 @@ Approach: Use a null data step and put statement to write to the log
 Recipe <with everything in square brackets to be filled in for actual use>:
 
 data _null_;
-    put "<message>";
+    put "This is my first document";
 run;
 */
 
