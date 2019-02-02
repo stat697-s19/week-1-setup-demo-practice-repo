@@ -49,7 +49,7 @@ Approach: Use a null data step and business logic to write to the log
 data _null_;
     do i = 1 to 100;
         if mod(i,10) = 0 then put 'Fizz';
-        else if mod(i, 5) = 0 then put 'Buzz';
+        else if mod(i, 17) = 0 then put 'Buzz';
         else put i=;
     end;
 run;
