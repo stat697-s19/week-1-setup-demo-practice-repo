@@ -1,10 +1,4 @@
 *******************************************************************************;
-**************** 80-character banner for column width reference ***************;
-* (set window width to banner width to calibrate line length to 80 characters *;
-*******************************************************************************;
-
-
-*******************************************************************************;
 * hello_world ;
 *******************************************************************************;
 /*
@@ -21,9 +15,10 @@ run;
 
 *Example;
 data _null_;
-    put 'Hello, World!';
+    put "I'm making changes to this file!";
 run;
 /*
+:)
 Notes:
 (1) In this example, single-quotes have been used to delimit the string literal
 'Hello, World!', meaning we know the string is everything between the opening
@@ -48,7 +43,7 @@ Approach: Use a null data step and business logic to write to the log
 *Example;
 data _null_;
     do i = 1 to 100;
-        if mod(i,3) = 0 then put 'Fizz';
+        if mod(i,3) = 0 then put 'Oink';
         else if mod(i, 5) = 0 then put 'Buzz';
         else put i=;
     end;
