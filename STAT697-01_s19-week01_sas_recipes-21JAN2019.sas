@@ -1,5 +1,5 @@
 *******************************************************************************;
-* hello_world ;
+* hiiii_world_whaddup ;
 *******************************************************************************;
 /*
 Scenario: Printing to the SAS log.
@@ -31,18 +31,18 @@ macros.)
 */
 
 *******************************************************************************;
-* fizz_buzz ;
+* fizzle_buzz ;
 *******************************************************************************;
 
 /*
-Scenario: Solve a simplified version of the FizzBuzz Challenge
+Scenario: Solve a simplified version of the FizzleBuzz Challenge
 
 Approach: Use a null data step and business logic to write to the log
 */
 
 *Example;
 data _null_;
-    do i = 1 to 100;
+    do i = 1 to 105;
         if mod(i,3) = 0 then put 'Oink';
         else if mod(i, 5) = 0 then put 'Buzz';
         else put i=;
@@ -66,3 +66,5 @@ dataset access methods, to prepare/clean data for analysis. This type of
 programming is commonly called "business logic" since it encapsulated domain
 specific behavior, here to solve a specific programming challenge.
 */
+
+* end ; 
