@@ -1,11 +1,5 @@
 *******************************************************************************;
-**************** 80-character banner for column width reference ***************;
-* (set window width to banner width to calibrate line length to 80 characters *;
-*******************************************************************************;
-
-
-*******************************************************************************;
-* hello_world ;
+* hiiii_world_whaddup ;
 *******************************************************************************;
 /*
 Scenario: Printing to the SAS log.
@@ -16,14 +10,15 @@ Recipe <with everything in square brackets to be filled in for actual use>:
 
 data _null_;
     put "<message>";
-run;
-*/
+	run;
+*******/
 
 *Example;
 data _null_;
-    put 'Hello, World!';
+    put "I'm making changes to this file!";
 run;
 /*
+:)
 Notes:
 (1) In this example, single-quotes have been used to delimit the string literal
 'Hello, World!', meaning we know the string is everything between the opening
@@ -36,19 +31,19 @@ macros.)
 */
 
 *******************************************************************************;
-* fizz_buzz ;
+* fizzle_buzz ;
 *******************************************************************************;
 
 /*
-Scenario: Solve a simplified version of the FizzBuzz Challenge
+Scenario: Solve a simplified version of the FizzleBuzz Challenge
 
 Approach: Use a null data step and business logic to write to the log
 */
 
 *Example;
 data _null_;
-    do i = 1 to 100;
-        if mod(i,3) = 0 then put 'Fizz';
+    do i = 1 to 105;
+        if mod(i,3) = 0 then put 'Oink';
         else if mod(i, 5) = 0 then put 'Buzz';
         else put i=;
     end;
@@ -71,3 +66,5 @@ dataset access methods, to prepare/clean data for analysis. This type of
 programming is commonly called "business logic" since it encapsulated domain
 specific behavior, here to solve a specific programming challenge.
 */
+
+* end ; 
