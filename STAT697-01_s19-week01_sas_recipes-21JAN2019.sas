@@ -10,7 +10,7 @@ Recipe <with everything in square brackets to be filled in for actual use>:
 
 data _null_;
     put "<message>";
-run;
+	run;
 *******/
 
 *Example;
